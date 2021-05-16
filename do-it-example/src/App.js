@@ -3,6 +3,7 @@ import TodaysPlan from "./03/TodaysPlan";
 import PropComponent from "./03/PropsComponent";
 import ChildComponent from "./03/ChildComponent";
 import BooleanComponent from "./03/BooleanComponent";
+import ChildComponent2 from "./03/ChildComponent2";
 class App extends Component {
   render() {
     return (
@@ -20,6 +21,7 @@ class App extends Component {
         />
         <div>지루할 때 : <BooleanComponent bored /></div>
         <div>즐거울 때 : <BooleanComponent /></div>
+        <ChildComponent2 objValue={{ age: 20 }} requiredStringValue="STR" />
       </div>
 
     );
