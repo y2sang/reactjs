@@ -7,7 +7,7 @@ class PropsComponent extends Component {
   }
 }
 
-PropsComponent.ProTypes = {
+PropsComponent.proTypes = {
   name: ProTypes.string,
 };
 export default PropsComponent;
