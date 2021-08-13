@@ -11,17 +11,17 @@ class StateExample extends Component {
     }
 
     componentDidMount() {
-        setTimeout(this.handleData, 4000);
+        setTimeout(() => this.handleData('new data '), 4000);
     }
 
-    handleData() {
-        const data = 'new data ';
-        const {formData} = this.state;
+    handleData(data) {
+        // const data = 'new data ';
+        //const {formData} = this.state;
 
-        this.setState({
+        this.setState(prevState => ({
             loading: false,
-            formData: data + formData,
-        });
+            formData: data + prevState.formData
+        }));
 
         console.log('loading value ', this.state.loading);
     }
