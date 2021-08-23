@@ -7,7 +7,7 @@ import ChildComponent2 from "./03/ChildComponent2";
 import DefaultPropsComponent from "./03/DefaultPropsComponent";
 import ChildProperty, {} from "./03/ChildProperty";
 import StateExample from "./03/StateExample";
-
+import TestApp from "./03/MyComponent";
 class App extends Component {
     render() {
         return (
@@ -33,6 +33,7 @@ class App extends Component {
                     <div>Child Node</div>
                 </ChildProperty>
                 <StateExample/>
+                <TestApp />
             </div>
 
         );
