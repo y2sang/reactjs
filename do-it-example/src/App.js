@@ -39,7 +39,7 @@ class App extends Component {
                 />
                 <div>지루할 때 : <BooleanComponent bored/></div>
                 <div>즐거울 때 : <BooleanComponent/></div>
-                <ChildComponent2 objValue={{age: 20}} requiredStringValue="STR"/>
+                <ChildComponent2 objValue={{age: 20, name: 'AAA'}} requiredStringValue="STR"/>
                 <DefaultPropsComponent/>
                 <ChildProperty>
                     <div>Child Node</div>
