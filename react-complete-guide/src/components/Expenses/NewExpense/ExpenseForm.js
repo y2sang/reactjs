@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
 import './ExpenseForm.css';
+import ExpensesButtons from "./ExpensesButtons";
 
 const ExpenseForm = (props) => {
     const [enteredTitle, setEnteredTitle] = useState('');
     const [enteredAmount, setEnteredAmount] = useState('');
     const [enteredDate, setEnteredDate] = useState('');
+
     // const [userInput, setUserInput] = useState({
     //     enteredTitle: '',
     //     enteredAmount: '',
@@ -49,8 +51,9 @@ const ExpenseForm = (props) => {
         setEnteredTitle('');
         setEnteredAmount('');
     }
+
     return (
-        <form onSubmit={submitHandler} className="">
+        <form onSubmit={submitHandler} >
             <div className="new-expense__controls">
                 <div className="new-expense__control">
                     <label>Title</label>
@@ -66,9 +69,8 @@ const ExpenseForm = (props) => {
                 </div>
 
             </div>
-            <div className="new-expense__actions">
-                <button type="submit">Add Expense</button>
-            </div>
+
+            <ExpensesButtons visibleFormHandler={props.visibleFormHandler}/>
         </form>
     );
 };
