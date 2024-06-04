@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="99aae8cc-0656-4a00-93ec-42aabfac5430" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/api/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/api/test/projects-delete.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/api/test/projects-get.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/api/test/projects-post.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/api/test/projects-put.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/logo-3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/logo-splash-screen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/placeimg_500_300_arch1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/placeimg_500_300_arch10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/placeimg_500_300_arch11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/placeimg_500_300_arch12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/placeimg_500_300_arch2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/placeimg_500_300_arch3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/placeimg_500_300_arch4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/placeimg_500_300_arch5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/placeimg_500_300_arch6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/placeimg_500_300_arch7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/placeimg_500_300_arch8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/placeimg_500_300_arch9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/react.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/react.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Button.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Clock.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Parent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UseStateTest.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/projects/MockProjects.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/projects/Project.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/projects/ProjectCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/projects/ProjectForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/projects/ProjectList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/projects/ProjectsPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../do-it-example/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../do-it-example/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../do-it-example/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../do-it-example/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/y2sang/reactjs.git",
+    "accountId": "d4a6ff6c-13db-4140-8841-25152250d96a"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2fA2zWIg6cQHRsjdvf3oWraTHUd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.npm dev JavaScript.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;LET&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ottl/WebstormProjects/reactjs/do-it-example-new&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.npm dev.executor&quot;: &quot;Debug&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/ottl/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/src/projects/ProjectCard.jsx" />
+      <recent name="$PROJECT_DIR$/src/Button.jsx" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/projects" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.npm dev JavaScript">
+    <configuration name="npm dev JavaScript" type="JavascriptDebugType" engineId="d8d00970-0746-41f5-9550-c0c4eb85bb69" uri="http://localhost:5173/">
+      <mapping url="http://localhost:5173" local-file="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="npm dev" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <EXTENSION ID="com.intellij.lang.javascript.buildTools.npm.rc.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" url="http://localhost:5173/" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.npm dev JavaScript" />
+      <item itemvalue="npm.npm dev" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17011.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99aae8cc-0656-4a00-93ec-42aabfac5430" name="Changes" comment="" />
+      <created>1713229824487</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713229824487</updated>
+      <workItem from="1713229825516" duration="3347000" />
+      <workItem from="1713240486671" duration="7837000" />
+      <workItem from="1713748230074" duration="10026000" />
+      <workItem from="1716956883646" duration="93000" />
+      <workItem from="1716956980550" duration="38487000" />
+      <workItem from="1717459726651" duration="1254000" />
+      <workItem from="1717461031837" duration="647000" />
+      <workItem from="1717461691293" duration="11000" />
+      <workItem from="1717461706618" duration="5000" />
+      <workItem from="1717462253742" duration="1353000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
+  </component>
+</project>
