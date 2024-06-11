@@ -1,45 +1,80 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+const baseUrl = 'http://localhost:3000';
+const url = `${baseUrl}/photos/`;
 
-const okUrl = 'http://localhost:3000/photos?_page=1&_limit=100';
-// const notFoundErrorUrl = 'https://httpstat.us/404';
-// const forbiddenErrorUrl = 'https://httpstat.us/403';
-// const serverErrorUrl = 'https://httpstat.us/500';
+function translateStatusToErrorMessage(status) {
+    switch (status) {
+        case 401:
+            return 'Please login again.';
+        case 403:
+            return 'You do not have permission to view the photos.';
+        default:
+            return 'There was an error retrieving the photos. Please try again.';
+    }
+}
+
+function checkStatus(response) {
+    if (response.ok) {
+        return response;
+    } else {
+        const httpErrorInfo = {
+            status: response.status,
+            statusText: response.statusText,
+            url: response.url,
+        };
+        console.log(
+            `logging http details for debugging: ${JSON.stringify(httpErrorInfo)}`
+        );
+
+        let errorMessage = translateStatusToErrorMessage(httpErrorInfo.status);
+        throw new Error(errorMessage);
+    }
+}
+
+function parseJSON(response) {
+    return response.json();
+}
+
+function delay(ms) {
+    return function (x) {
+        return new Promise((resolve) => setTimeout(() => resolve(x), ms));
+    };
+}
+
+const photoAPI = {
+    getAll(page = 1, limit = 10) {
+        return (
+            fetch(`${url}?_page=${page}&_limit=${limit}`)
+                // .then(delay(600))
+                .then(checkStatus)
+                .then(delay(1000))
+                .then(parseJSON)
+                .catch((error) => {
+                    let errorMessage = translateStatusToErrorMessage(error);
+                    throw new Error(errorMessage);
+                })
+        );
+    },
+};
 
 function PhotoList() {
     const [loading, setLoading] = React.useState(false);
     const [photos, setPhotos] = React.useState([]);
     const [error, setError] = React.useState(null);
 
-    function toUserError(error) {
-        console.log('Call API to log the raw error. ', error);
-        return 'There was an error loading the photos.';
-    }
-
     React.useEffect(() => {
         setLoading(true);
+        setError(null);
 
-        fetch(okUrl)
-            .then((response) => {
-                if (!response.ok) throw new Error(response.statusText);
-                return response;
-            })
-            .then((res) => {
-                console.log(res);
-                return res;
-            })
-            .then((response) => {
-                return response.json();
-            })
+        photoAPI
+            .getAll(1)
             .then((data) => {
-                console.log(data);
-                setError(null);
                 setPhotos(data);
                 setLoading(false);
             })
             .catch((error) => {
-                const userError = toUserError(error);
-                setError(userError);
+                setError(error.message);
                 setLoading(false);
             });
     }, []);
