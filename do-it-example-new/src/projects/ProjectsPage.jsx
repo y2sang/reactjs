@@ -1,6 +1,7 @@
 import ProjectList from "./ProjectList.jsx";
 import {useState, useEffect} from "react";
 import {projectAPI} from "./ProjectAPI.jsx";
+import {Project} from "./Project.jsx";
 
 function ProjectsPage() {
     // const [projects, setProjects] = useState(MOCK_PROJECTS);
@@ -58,10 +59,20 @@ function ProjectsPage() {
 
     const saveProject = (project) => {
         // console.log('Saving project: ', project);
-        let updatedProjects = projects.map((p) => {
-            return p.id === project.id ? project : p;
-        });
-        setProjects(updatedProjects);
+        // let updatedProjects = projects.map((p) => {
+        //     return p.id === project.id ? project : p;
+        // });
+        // setProjects(updatedProjects);
+        projectAPI.put(project)
+            .then(updatedProject => {
+                let updatedProjects = projects.map(p => {
+                    return p.id === project.id ? new Project(updatedProject) : p;
+                });
+                setProjects(updatedProjects);
+            })
+            .catch(e => {
+                setError(e.message);
+            })
     };
     return (
         <>
