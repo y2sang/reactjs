@@ -127,8 +127,9 @@ function App() {
                         <Route path="about" element={<About/>}/>
                         <Route path="contact" element={<Contact/>}/>
                         <Route path="*" element={<NotFound/>}/>
-                        <Route path="movies" element={<MovieList movies={movies}/>}/>
-                        <Route path="movies/:id" element={<MovieDetail/>}/>
+                        {/*<Route path="movies" element={<MovieList movies={movies} />} />*/}
+                        <Route path="movies/*" element={<MovieList movies={movies} />} />
+
                     </Routes>
                 </div>
             </div>
