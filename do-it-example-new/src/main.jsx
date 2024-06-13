@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {BrowserRouter as Router, Route, Routes, NavLink, Link, useParams} from 'react-router-dom';
 
-// import App from './App.jsx'
-// import './index.css'
+import App from './App.jsx'
+import './index.css'
 
 class Movie {
     constructor(id, name, description, type) {
@@ -100,7 +100,7 @@ function NotFound() {
     );
 }
 
-function App() {
+function AppSample() {
     return (
         <Router>
             <div>

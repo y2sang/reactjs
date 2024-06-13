@@ -1,13 +1,16 @@
 import {useState} from 'react'
 import reactLogo from '/react.svg'
 import viteLogo from '/vite.svg'
-// import './App.css'
+import './App.css'
 import PropTypes from "prop-types";
 import {Button} from "./Button.jsx";
 import ProjectsPage from "./projects/ProjectsPage.jsx";
 import Clock from "./Clock.jsx";
 import UseStateTest from "./UseStateTest.jsx";
 import Parent from "./Parent.jsx";
+import {BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom';
+import HomePage from './home/HomePage';
+import ProjectPage from "./projects/ProjectPage.jsx";
 
 function Greeter(props) {
     return <h1>Hello, {props.name}</h1>;
@@ -47,7 +50,7 @@ FruitListItem.propTypes = {
 }
 
 
-function App() {
+function AppSample() {
     const [count, setCount] = useState(0)
 
     // return (
@@ -89,4 +92,30 @@ function App() {
     )
 }
 
-export default App
+function App() {
+    return (
+        <Router>
+            <header className="sticky">
+                  <span className="logo">
+        <img src="/assets/logo-3.svg" alt="logo" width="49" height="99"/>
+      </span>
+                <NavLink to="/" className="button rounded">
+                    <span className="icon-home"></span>
+                    Home
+                </NavLink>
+                <NavLink to="/projects" className="button rounded">
+                    Projects
+                </NavLink>
+            </header>
+            <div className="container">
+                <Routes>
+                    <Route path="/" element={<HomePage/>}/>
+                    <Route path="/projects" element={<ProjectsPage/>}/>
+                    <Route path="/projects/:id" element={<ProjectPage />} />
+                </Routes>
+            </div>
+        </Router>
+    );
+}
+
+export default App;
