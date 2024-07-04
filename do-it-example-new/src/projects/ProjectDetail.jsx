@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 export default function ProjectDetail({project}) {
     function formatDate(dateString) {
         const date = new Date(dateString);

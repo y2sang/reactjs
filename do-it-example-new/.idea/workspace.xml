@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99aae8cc-0656-4a00-93ec-42aabfac5430" name="Changes" comment="Form Test">
+    <list default="true" id="99aae8cc-0656-4a00-93ec-42aabfac5430" name="Changes" comment="라우트 기본 테스트">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/api/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/api/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projects/ProjectDetail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/ProjectDetail.jsx" afterDir="false" />
     </list>
-    <list id="1ad8e314-420d-4cba-bc55-fc094f9b0bd4" name="설정" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list id="1ad8e314-420d-4cba-bc55-fc094f9b0bd4" name="설정" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,8 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JSX File" />
         <option value="CSS File" />
+        <option value="JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -42,26 +39,6 @@
     &quot;accountId&quot;: &quot;d4a6ff6c-13db-4140-8841-25152250d96a&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="6" end1="53" start2="6" end2="8" changelist="99aae8cc-0656-4a00-93ec-42aabfac5430" />
-        <range start1="62" end1="62" start2="17" end2="18" changelist="99aae8cc-0656-4a00-93ec-42aabfac5430" />
-        <range start1="74" end1="78" start2="30" end2="34" changelist="99aae8cc-0656-4a00-93ec-42aabfac5430" />
-        <range start1="79" end1="80" start2="35" end2="36" changelist="99aae8cc-0656-4a00-93ec-42aabfac5430" />
-        <range start1="92" end1="109" start2="48" end2="66" changelist="99aae8cc-0656-4a00-93ec-42aabfac5430" />
-        <range start1="110" end1="111" start2="67" end2="68" changelist="99aae8cc-0656-4a00-93ec-42aabfac5430" />
-        <range start1="113" end1="113" start2="70" end2="72" changelist="99aae8cc-0656-4a00-93ec-42aabfac5430" />
-        <range start1="114" end1="115" start2="73" end2="73" changelist="99aae8cc-0656-4a00-93ec-42aabfac5430" />
-        <range start1="125" end1="126" start2="83" end2="84" changelist="99aae8cc-0656-4a00-93ec-42aabfac5430" />
-        <range start1="151" end1="152" start2="109" end2="110" changelist="99aae8cc-0656-4a00-93ec-42aabfac5430" />
-        <range start1="159" end1="159" start2="117" end2="118" changelist="99aae8cc-0656-4a00-93ec-42aabfac5430" />
-        <range start1="172" end1="173" start2="131" end2="135" changelist="99aae8cc-0656-4a00-93ec-42aabfac5430" />
-        <range start1="174" end1="174" start2="136" end2="161" changelist="1ad8e314-420d-4cba-bc55-fc094f9b0bd4" />
-        <range start1="192" end1="193" start2="179" end2="181" changelist="1ad8e314-420d-4cba-bc55-fc094f9b0bd4" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -88,6 +65,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.api.executor&quot;: &quot;Run&quot;,
     &quot;npm.npm dev.executor&quot;: &quot;Debug&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/ottl/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
@@ -114,6 +92,16 @@
       <mapping url="http://localhost:5173" local-file="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="api" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="api" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="npm dev" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -130,12 +118,18 @@
     <list>
       <item itemvalue="JavaScript Debug.npm dev JavaScript" />
       <item itemvalue="npm.npm dev" />
+      <item itemvalue="npm.api" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.api" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17890.13" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
       </set>
     </attachedChunks>
   </component>
@@ -161,6 +155,11 @@
       <workItem from="1717548193048" duration="5380000" />
       <workItem from="1717719164595" duration="9102000" />
       <workItem from="1718079048470" duration="436000" />
+      <workItem from="1718079490410" duration="34118000" />
+      <workItem from="1718690411088" duration="2736000" />
+      <workItem from="1718932257979" duration="154000" />
+      <workItem from="1719559023092" duration="1000" />
+      <workItem from="1719878862824" duration="5030000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -186,11 +185,94 @@
       <option name="project" value="LOCAL" />
       <updated>1717719919650</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="axios test">
+      <option name="closed" value="true" />
+      <created>1718079565147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718079565147</updated>
+    </task>
+    <task id="LOCAL-00005" summary="axios test">
+      <option name="closed" value="true" />
+      <created>1718081102271</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718081102271</updated>
+    </task>
+    <task id="LOCAL-00006" summary="json-server test">
+      <option name="closed" value="true" />
+      <created>1718152224024</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718152224024</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add ProjectAPI.jsx&#10;add loading indicator">
+      <option name="closed" value="true" />
+      <created>1718153461962</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718153461962</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add paging">
+      <option name="closed" value="true" />
+      <created>1718167689845</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718167689845</updated>
+    </task>
+    <task id="LOCAL-00009" summary="업데이트 기능 추가">
+      <option name="closed" value="true" />
+      <created>1718168814545</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718168814545</updated>
+    </task>
+    <task id="LOCAL-00010" summary="라우트 테스트">
+      <option name="closed" value="true" />
+      <created>1718174425079</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718174425079</updated>
+    </task>
+    <task id="LOCAL-00011" summary="라우트 테스트 - 중첩">
+      <option name="closed" value="true" />
+      <created>1718174844529</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1718174844529</updated>
+    </task>
+    <task id="LOCAL-00012" summary="라우트 기본 테스트">
+      <option name="closed" value="true" />
+      <created>1718259904642</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718259904642</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="GitHub.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -206,6 +288,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="." />
     <MESSAGE value="Form Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Form Test" />
+    <MESSAGE value="axios test" />
+    <MESSAGE value="json-server test" />
+    <MESSAGE value="add ProjectAPI.jsx&#10;add loading indicator" />
+    <MESSAGE value="add paging" />
+    <MESSAGE value="업데이트 기능 추가" />
+    <MESSAGE value="라우트 테스트" />
+    <MESSAGE value="라우트 테스트 - 중첩" />
+    <MESSAGE value="라우트 기본 테스트" />
+    <option name="LAST_COMMIT_MESSAGE" value="라우트 기본 테스트" />
   </component>
 </project>
