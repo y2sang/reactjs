@@ -18,9 +18,25 @@ function App() {
         setGameTurns(prevTurns => {
             const currentPlayer = deriveActivePlayer(prevTurns);
 
-            return [{
-                square: {row: rowIndex, col: colIndex}, player: currentPlayer
-            }, ...prevTurns];
+            let duplicate = false;
+            prevTurns.forEach(item => {
+                if (item.square.row + ":" + item.square.col === rowIndex + ":" + colIndex) {
+                    duplicate = true;
+                    return false;
+                }
+            });
+            let resultArr;
+
+            if (duplicate) {
+                resultArr = prevTurns;
+            } else {
+                resultArr = [{
+                    square: {row: rowIndex, col: colIndex}, player: currentPlayer
+                }, ...prevTurns];
+            }
+
+
+            return resultArr;
         });
     }
     const activePlayer = deriveActivePlayer(gameTurns);
