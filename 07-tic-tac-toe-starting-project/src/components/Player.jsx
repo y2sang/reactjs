@@ -4,10 +4,13 @@ import {Component, useState} from "react";
 //     playerName = this.props.playerName;
 //     playerSymbol = this.props.playerSymbol;
 
-function Player({initialPlayerName, playerSymbol, isActive}) {
+function Player({initialPlayerName, playerSymbol, isActive, onPlayerNameChange}) {
     const [isEditing, setIsEditing] = useState(false);
     const [playerName, setPlayerName] = useState(initialPlayerName);
-    let handleEditClick = () => setIsEditing((editing) => !isEditing);
+    let handleEditClick = () => setIsEditing((editing) => {
+        onPlayerNameChange(playerSymbol, playerName);
+        return !isEditing;
+    });
     let handleChange = (evt) => {
         setPlayerName(evt.target.value);
     }
